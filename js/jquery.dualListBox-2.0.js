@@ -92,7 +92,7 @@
             var self = this;
 
             //merge user options into the defaults
-            $.extend(true, this._options, options);
+            this._options = $.extend(true, {}, this._defaultOptions, options);
 
             // save the instance
             _boxes.push(this);
